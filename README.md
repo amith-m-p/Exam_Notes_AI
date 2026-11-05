@@ -135,3 +135,27 @@ The CLI prints a signing secret that starts with `whsec_`. Copy it into `STRIPE_
 - **Notes fail to generate:** Check that `GEMINI_API_KEY` is valid and that the model name used by the server is available for your key.
 
 ## 📁 Project Structure
+
+ExamNotesAI/
+├── client/ # React + Vite frontend
+│ ├── src/
+│ │ ├── components/ # UI components
+│ │ ├── pages/ # Route pages
+│ │ ├── redux/ # Redux Toolkit state
+│ │ ├── services/ # API calls to the server
+│ │ └── utils/ # Firebase configuration
+│ └── .env # Client environment variables
+│
+└── server/ # Express backend
+├── controllers/ # Route handlers
+├── middleware/ # Authentication middleware
+├── models/ # MongoDB schemas (Mongoose)
+├── routes/ # API routes
+├── services/ # Gemini AI service
+└── utils/ # Database connection, tokens, prompt builder
+
+
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
