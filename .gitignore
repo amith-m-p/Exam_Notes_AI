@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables — NEVER commit these
+.env
+**/.env
+*.env
+
+# Build output
+dist/
+build/
+**/dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Installer files
+*.msi
+*.exe
+*.dmg
+
+# Lock files (keep package-lock.json but skip yarn/pnpm)
+yarn.lock
+pnpm-lock.yaml
